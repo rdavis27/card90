@@ -65,7 +65,6 @@ table1tran <- matrix(
   ncol=4
 )
 table1orig <- t(table1tran)
-print(table1orig)
 table1 <- NULL
 for (i in c(1,2,4,5)){
   Group <- c(aa$pop[aa$year == 1979 & aa$miami == 1 & aa$ngroup == i]/1000,

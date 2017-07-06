@@ -1,4 +1,4 @@
-# Reproduce Table 4 from http://davidcard.berkeley.edu/papers/mariel-impact.pdf
+# Reproduce data in http://davidcard.berkeley.edu/papers/mariel-impact.pdf
 #install.packages("plyr")
 #install.packages("ggplot2")
 library(foreign)
