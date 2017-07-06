@@ -1,2 +1,8 @@
 # card90
-Reproduce results from David Card's 1990 paper on the Mariel Boatlift
+
+The purpose of this package is to reproduce results from David Card's 1990 paper titled "The Impact of the Mariel Boatlift on the Miami Labor Market" which can be found online at http://davidcard.berkeley.edu/papers/mariel-impact.pdf .  It consists of the programs card90data.R and card90proc.R, both in the R subdirectory.
+
+The program card90data.R will read CPS Merged Outgoing Rotation Group (MORG) files for 1979 through 1985 and create the files card85.txt and card85.csv.  Before running it, the files morg79.dta through morg85.dta must be copied from http://www.nber.org/morg/annual/ to a subdirectory of the working directory named data.  The program will read these files and create the files card85.txt and card85.csv  in the working directory.  The file card85.txt is a space-delimited file required by the program card90proc.R and the file card85.csv is just a comma-separated version supplied for convenience.
+
+The program card90proc.R will then read the file card85.txt in the working directory and use that data to reproduce values from Tables 1, 3, and 4 of Card's paper.  For each table, the program will print out the values as calculated by the program, a table showing the calculated values minus the values from the paper, and then a table showing the percent increase or decrease between the values in the paper and the calculated values.  It will also output plots of the values in Tables 3 and 4 for Miami and the Comparison Cities of Atlanta, Los Angeles, Houston, and Tampa-St. Petersburg.  Finally, it will print out similar information for the weekly wage and usual hours worked for both Miami and the Comparison Cities.
+
